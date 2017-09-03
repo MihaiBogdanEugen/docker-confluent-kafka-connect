@@ -30,7 +30,7 @@ RUN echo "===> Installing Schema Registry (for Avro jars) ..." \
     && wget "https://raw.githubusercontent.com/confluentinc/cp-docker-images/3.3.x-quickstart-fix/debian/kafka-connect-base/include/etc/confluent/docker/log4j.properties.template" -O "/etc/confluent/docker/log4j.properties.template" \
     && echo "9c5a9355db166d390d9c36686bc4c859669acaf82c28cbdae7ee3bfe6a2422ec" "/etc/confluent/docker/log4j.properties.template" | sha256sum -c - \
     && wget "https://raw.githubusercontent.com/confluentinc/cp-docker-images/3.3.x-quickstart-fix/debian/kafka-connect-base/include/etc/confluent/docker/run" -O "/etc/confluent/docker/run" \
-    && echo "8499f919a9fc31f7cac5b5fd8998fabeea7debc3518e02cbe2854faa2ca73b31" "/etc/confluent/docker/run" | sha256sum -c - \
+    && echo "e00db49c34d0d7baf8d8c54fcec543c0e26c8c562f94a436071aab4d4a6f3f1b" "/etc/confluent/docker/run" | sha256sum -c - \
     && wget "https://raw.githubusercontent.com/confluentinc/cp-docker-images/3.3.x-quickstart-fix/debian/kafka-connect-base/include/etc/confluent/docker/kafka-connect.properties.template" -O "/etc/confluent/docker/kafka-connect.properties.template" \
     && echo "121a6de516ed9ea469aa143098e36c7df05b801e86cde1738a5b13c102e383d9" "/etc/confluent/docker/kafka-connect.properties.template" | sha256sum -c -
 

@@ -4,7 +4,7 @@
 
 * ```jesse-slim-8u144-2.11.11-3.2.2``` _\([jesse-slim-8u144-2.11.11-3.2.2/Dockerfile]\)_
 [![](https://images.microbadger.com/badges/image/mbe1224/confluent-osp-kafka-connect:jesse-slim-8u144-2.11.11-3.2.2.svg)](https://microbadger.com/images/mbe1224/confluent-osp-kafka-connect:jesse-slim-8u144-2.11.11-3.2.2 "")
-* ```jesse-slim-8u144-2.11.11-3.3.0``` _\([jesse-slim-8u144-2.11.11-3.3.0/Dockerfile]\)_
+* ```jesse-slim-8u144-2.11.11-3.3.0```, ```latest``` _\([jesse-slim-8u144-2.11.11-3.3.0/Dockerfile]\)_
 [![](https://images.microbadger.com/badges/image/mbe1224/confluent-osp-kafka-connect:jesse-slim-8u144-2.11.11-3.3.0.svg)](https://microbadger.com/images/mbe1224/confluent-osp-kafka-connect:jesse-slim-8u144-2.11.11-3.3.0 "")
 
 #### All tag names follow the naming convention:
