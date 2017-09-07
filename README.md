@@ -55,7 +55,6 @@ docker build -t mbe1224/confluent-osp-kafka-connect .
 Run the container
 ```shell
 docker run -d \
-docker run -d \
     --name=kafka-connect \
     --net=host \
     -e CONNECT_BOOTSTRAP_SERVERS=localhost:29092 \
