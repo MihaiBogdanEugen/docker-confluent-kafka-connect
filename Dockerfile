@@ -1,7 +1,7 @@
 FROM mbe1224/confluent-osp-kafka:jesse-slim-8u144-2.11.11-3.2.2
 
 ENV COMPONENT=kafka-connect
-ENV CONFLUENT_DEB_VERSION="2"
+
 EXPOSE 8083
 
 RUN echo "===> Installing Schema Registry (for Avro jars), JDBC, Elasticsearch, Hadoop and S3 connectors ..." \
@@ -14,7 +14,7 @@ RUN echo "===> Installing Schema Registry (for Avro jars), JDBC, Elasticsearch, 
         confluent-kafka-connect-storage-common=${CONFLUENT_VERSION}-${CONFLUENT_DEB_VERSION} \
         confluent-kafka-connect-s3=${CONFLUENT_VERSION}-${CONFLUENT_DEB_VERSION} \
     && echo "===> Cleaning up ..."  \
-    && apt-get clean && rm -rf /tmp/* /var/lib/apt/lists/* \
+    && apt-get clean && rm -rf /tmp/* /var/lib/apt/lists/* \ 
     echo "===> Setting up ${COMPONENT} dirs ..." \
     && mkdir -p /etc/${COMPONENT} /etc/${COMPONENT}/secrets /etc/${COMPONENT}/jars /etc/confluent/docker \
     && chmod -R ag+w /etc/${COMPONENT} /etc/${COMPONENT}/secrets /etc/${COMPONENT}/jars \
