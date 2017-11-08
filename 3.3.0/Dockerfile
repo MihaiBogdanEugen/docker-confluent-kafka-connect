@@ -1,4 +1,4 @@
-FROM mbe1224/confluent-osp-kafka:latest
+FROM mbe1224/confluent-platform-kafka:3.3.0
 
 ENV COMPONENT=kafka-connect
 
