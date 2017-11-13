@@ -32,7 +32,7 @@ Therefore, it follows the same structure as the one from the original [repositor
 - tags ```3.3.0``` and```latest``` follow branch [3.3.x]
 
 
-Apart of the base image ([confluent-base]), it has [Apache Kafka Connect] related packages, plus the [Schema Registry] added on top of it, installed using the following Confluent Debian package:
+Apart of the base image ([mbe1224/confluent-kafka]), it has [Apache Kafka Connect] related packages, plus the [Schema Registry] added on top of it, installed using the following Confluent Debian package:
 - ```confluent-schema-registry-2.11```
 - ```confluent-kafka-connect-jdbc-2.11```
 - ```confluent-kafka-connect-hdfs-2.11```
@@ -109,6 +109,6 @@ Moreover, one can use any of the properties specified in the [Apache Kafka Conne
    [repository]: <https://github.com/confluentinc/cp-docker-images>
    [3.2.x]: <https://github.com/confluentinc/cp-docker-images/tree/3.2.x>
    [3.3.x]: <https://github.com/confluentinc/cp-docker-images/tree/3.3.x>   
-   [confluent-base]: <https://hub.docker.com/r/mbe1224/confluent-base/>
+   [mbe1224/confluent-kafka]: <https://hub.docker.com/r/mbe1224/confluent-kafka/>
    [MIT License]: <https://raw.githubusercontent.com/MihaiBogdanEugen/docker-confluent-kafka-connect/master/LICENSE>
    [Oracle Binary Code License Agreement]: <https://raw.githubusercontent.com/MihaiBogdanEugen/docker-confluent-kafka-connect/master/Oracle_Binary_Code_License_Agreement%20for%20the%20Java%20SE%20Platform_Products_and_JavaFX>
