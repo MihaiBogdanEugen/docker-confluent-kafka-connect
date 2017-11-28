@@ -4,8 +4,10 @@
 
 * ```3.2.2``` _\([3.2.2/Dockerfile]\)_
 [![](https://images.microbadger.com/badges/image/mbe1224/confluent-kafka-connect:3.2.2.svg)](https://microbadger.com/images/mbe1224/confluent-kafka-connect:3.2.2 "")
-* ```3.3.0```, ```latest``` _\([3.3.0/Dockerfile]\)_
+* ```3.3.0``` _\([3.3.0/Dockerfile]\)_
 [![](https://images.microbadger.com/badges/image/mbe1224/confluent--connect:3.3.0.svg)](https://microbadger.com/images/mbe1224/confluent-kafka-connect:3.3.0 "")
+* ```3.3.1```, ```latest``` _\([3.3.1/Dockerfile]\)_
+[![](https://images.microbadger.com/badges/image/mbe1224/confluent--connect:3.3.1.svg)](https://microbadger.com/images/mbe1224/confluent-kafka-connect:3.3.1 "")
 
 *All tag names follow the naming convention of the [Confluent Open Source Platform]*
 
@@ -22,14 +24,15 @@
     - [Docker utility belt script ('dub')]
 - [Apache Kafka Connect] added:
     - version 0.10.2.1 in ```3.2.2```
-    - version 0.11.0.0 in ```3.3.0``` and ```latest```
+    - version 0.11.0.0 in ```3.3.0```
+    - version 0.11.0.1 in ```3.3.1``` and ```latest```
 
 ### Details: ### 
 
 This image was created with the sole purpose of offering the [Confluent Open Source Platform] running on top of [Oracle JDK].
 Therefore, it follows the same structure as the one from the original [repository]. More precisely:
 - tag ```3.2.2``` follows branch [3.2.x], and 
-- tags ```3.3.0``` and```latest``` follow branch [3.3.x]
+- tags ```3.3.0```, ```3.3.1``` and```latest``` follow branch [3.3.x]
 
 
 Apart of the base image ([mbe1224/confluent-kafka]), it has [Apache Kafka Connect] related packages, plus the [Schema Registry] added on top of it, installed using the following Confluent Debian package:
@@ -44,7 +47,7 @@ Apart of the base image ([mbe1224/confluent-kafka]), it has [Apache Kafka Connec
 
 Build the image
 ```shell
-docker build -t mbe1224/confluent-kafka-connect /3.3.0/
+docker build -t mbe1224/confluent-kafka-connect ./3.3.1/
 ```
 
 Run the container
@@ -104,6 +107,7 @@ Moreover, one can use any of the properties specified in the [Apache Kafka Conne
    [Oracle JDK]: <http://www.oracle.com/technetwork/java/javase/downloads/index.html>
    [3.2.2/Dockerfile]: <https://github.com/MihaiBogdanEugen/docker-confluent-kafka-connect/blob/master/3.2.2/Dockerfile>
    [3.3.0/Dockerfile]: <https://github.com/MihaiBogdanEugen/docker-confluent-kafka-connect/blob/master/3.3.0/Dockerfile>
+   [3.3.1/Dockerfile]: <https://github.com/MihaiBogdanEugen/docker-confluent-kafka-connect/blob/master/3.3.1/Dockerfile>
    [Confluent utility belt script ('cub')]: <https://raw.githubusercontent.com/confluentinc/cp-docker-images/df0091f5437113d2764cabb7433eee25fba6a4b6/debian/base/include/cub>
    [Docker utility belt script ('dub')]: <https://raw.githubusercontent.com/confluentinc/cp-docker-images/df0091f5437113d2764cabb7433eee25fba6a4b6/debian/base/include/dub>  
    [repository]: <https://github.com/confluentinc/cp-docker-images>
